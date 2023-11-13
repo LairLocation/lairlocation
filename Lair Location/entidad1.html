@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Entidad</title>
+    <link rel="stylesheet" href="tu_estilo.css">
+    <style>
+        /* Estilos adicionales para esta página */
+        body {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .edit-entidad-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #000;
+            border-radius: 3px;
+        }
+
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #000;
+            border-radius: 3px;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #000;
+            border-radius: 3px;
+        }
+
+        .btn-save {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-save:hover {
+            background-color: #c0392b;
+        }
+
+        .back-link {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-bar">
+        <ul>
+            <li><a href="paneldecontrol.html">Atrás</a></li>
+        </ul>
+    </div>
+
+    <div class="edit-entidad-container">
+        <h2>Editar Entidad</h2>
+
+        <div class="form-group">
+            <label for="foto">Cambiar Foto de Perfil</label>
+            <input type="file" id="foto" name="foto">
+        </div>
+
+        <div class="form-group">
+            <label for="nombre">Nombre de la Entidad</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="codigo">Código</label>
+            <input type="text" id="codigo" name="codigo">
+        </div>
+
+        <div class="form-group">
+            <label for="dispositivo">Dispositivo</label>
+            <select id="dispositivo" name="dispositivo">
+                <option value="mascota">Dispositivo Mascota</option>
+                <option value="vehiculo">Dispositivo Vehículo</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion"></textarea>
+        </div>
+
+        <button class="btn-save" onclick="guardarCambios()">Guardar Cambios</button>
+
+        <a href="#" class="back-link">Volver</a>
+    </div>
+
+    <script>
+        function guardarCambios() {
+            // Implementa aquí la lógica para guardar los cambios
+            alert('Cambios guardados');
+        }
+    </script>
+
+</body>
+</html>
